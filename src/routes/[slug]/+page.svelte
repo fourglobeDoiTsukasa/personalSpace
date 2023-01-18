@@ -61,10 +61,10 @@
     width: 100%;
   }
   .img {
-    width: 50%;
+    width: 48%;
   }
   .text {
-    width: 50%;
+    width: 48%;
   }
 
   section > div {
