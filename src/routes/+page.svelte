@@ -4,70 +4,52 @@
   import { each } from 'svelte/internal';
 </script>
 
-<ul>
-  {#each data.contents as content}
-    <li>
-      <a href={content.id}>
-        <h3 style="display: inline;">{content.title}</h3>
-      </a>
-      {#if content.category.name == 'ナレッジ共有'}
-        <div class="category">
-          <div class="category-knowledge">{content.category.name}</div>
-        </div>
-      {/if}
-      {#if content.category.name == '作業資料'}
-        <div class="category">
-          <div class="category-work">{content.category.name}</div>
-        </div>
-      {/if}
-      {#if content.category.name == 'その他の情報'}
-        <div class="category">
-          <div class="category-information">{content.category.name}</div>
-        </div>
-      {/if}
-    </li>
-  {/each}
-</ul>
+<div class="title">
+  <h2>最新情報一覧</h2>
+</div>
+<div class="post-area">
+  <ul>
+    {#each data.contents as content}
+      <li class="category-list">
+        <a href={content.id}>
+          <h3>{content.title}</h3>
+        </a>
+        {#if content.category.name == 'ナレッジ共有'}
+          <div class="category">
+            <div class="category-knowledge">{content.category.name}</div>
+          </div>
+        {/if}
+        {#if content.category.name == '作業資料'}
+          <div class="category">
+            <div class="category-work">{content.category.name}</div>
+          </div>
+        {/if}
+        {#if content.category.name == 'その他の情報'}
+          <div class="category">
+            <div class="category-information">{content.category.name}</div>
+          </div>
+        {/if}
+      </li>
+    {/each}
+  </ul>
+</div>
 
 <style>
-  li {
-    margin-bottom: 30px;
+  .title {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 4px 16px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 12px #aaa, inset -2px -2px 4px #ccc,
+      inset 0 0 4px #f1f1f1;
   }
-  .category {
-    margin-left: calc(40 / 1920 * 100%);
-    width: 100px;
-    font-size: 12px;
-    color: #111;
-    font-weight: 500;
+  h2 {
+    display: inline-block;
   }
-  .category-knowledge {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #66e8c8;
-    box-shadow: 1px 1px 4px #999, inset -2px -2px 4px #61c9b1,
-      inset 0 0 4px #98dbcb;
-    padding: 2px 10px;
-    border-radius: 10px;
+  h3 {
+    display: inline-block;
   }
-  .category-work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #72c0ea;
-    box-shadow: 1px 1px 4px #999, inset -2px -2px 4px #65a3c4,
-      inset 0 0 4px #b4e5ff;
-    padding: 2px 10px;
-    border-radius: 10px;
-  }
-  .category-information {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f48ae1;
-    box-shadow: 1px 1px 4px #999, inset -2px -2px 4px #c865b6,
-      inset 0 0 4px #f5a1e6;
-    padding: 2px 10px;
-    border-radius: 10px;
+  .post-area {
+    margin-top: 30px;
   }
 </style>

@@ -1,0 +1,38 @@
+.category {
+  margin-left: calc(40 / 1920 * 100%);
+  margin-top: 2px;
+  width: 100px;
+  font-size: 12px;
+  color: #111;
+  font-weight: 500;
+}
+.category-knowledge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #66e8c8;
+  box-shadow: 1px 1px 4px #999, inset -2px -2px 4px #61c9b1,
+    inset 0 0 4px #98dbcb;
+  padding: 2px 10px 3px;
+  border-radius: 10px;
+}
+.category-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #72c0ea;
+  box-shadow: 1px 1px 4px #999, inset -2px -2px 4px #65a3c4,
+    inset 0 0 4px #b4e5ff;
+  padding: 2px 10px 3px;
+  border-radius: 10px;
+}
+.category-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f48ae1;
+  box-shadow: 1px 1px 4px #999, inset -2px -2px 4px #c865b6,
+    inset 0 0 4px #f5a1e6;
+  padding: 2px 10px 3px;
+  border-radius: 10px;
+}

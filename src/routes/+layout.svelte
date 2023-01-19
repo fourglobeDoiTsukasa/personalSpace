@@ -5,11 +5,10 @@
 <header>
   <nav>
     <ul>
-      <li><a href="/">テスト1</a></li>
-      <li><a href="/">テスト2</a></li>
-      <li><a href="/">テスト3</a></li>
-      <li><a href="/">テスト4</a></li>
-      <li><a href="/">テスト5</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/information">information</a></li>
+      <li><a href="./work">Work</a></li>
+      <li><a href="/knowledge">knowledge</a></li>
     </ul>
   </nav>
 </header>
@@ -22,11 +21,10 @@
 <footer>
   <nav>
     <ul>
-      <li><a href="/">テスト1</a></li>
-      <li><a href="/">テスト2</a></li>
-      <li><a href="/">テスト3</a></li>
-      <li><a href="/">テスト4</a></li>
-      <li><a href="/">テスト5</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/information">information</a></li>
+      <li><a href="./work">Work</a></li>
+      <li><a href="/knowledge">knowledge</a></li>
     </ul>
   </nav>
 </footer>
@@ -59,6 +57,9 @@
   .wrapper {
     width: calc(1200 / 1920 * 100%);
     margin: 0 auto;
+    @media (max-width: 821px) {
+      width: 90%;
+    }
   }
   footer {
     margin-top: 40px;
