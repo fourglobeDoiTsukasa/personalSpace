@@ -4,7 +4,9 @@
   export let data;
 </script>
 
-<h2>作業資料</h2>
+<div class="title">
+  <h2>作業資料</h2>
+</div>
 <div class="post-area">
   <ul>
     {#each data.contents as content}
@@ -21,15 +23,18 @@
 </div>
 
 <style>
-  h2 {
-    display: inline;
-    border-bottom: 2px solid rgb(255, 138, 138);
-  }
-
   h3 {
     display: inline;
   }
   .post-area {
     margin-top: 30px;
+  }
+  .title {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 4px 24px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 12px #aaa, inset -2px -2px 4px #ccc,
+      inset 0 0 4px #f1f1f1;
   }
 </style>
