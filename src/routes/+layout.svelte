@@ -6,9 +6,9 @@
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/information">Information</a></li>
       <li><a href="./work">Work</a></li>
-      <li><a href="/knowledge">Knowledge</a></li>
+      <li><a href="./knowledge">Knowledge</a></li>
+      <li><a href="./information">Information</a></li>
     </ul>
   </nav>
 </header>
@@ -22,9 +22,9 @@
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/information">Information</a></li>
       <li><a href="./work">Work</a></li>
-      <li><a href="/knowledge">Knowledge</a></li>
+      <li><a href="./knowledge">Knowledge</a></li>
+      <li><a href="./information">Information</a></li>
     </ul>
   </nav>
 </footer>
